@@ -29,7 +29,7 @@ public class WebCam : MonoBehaviour
         else
         {
             WebCamDevice device = WebCamTexture.devices[currentCamIndex];
-            WebCamTexture camTexture = new WebCamTexture(device.name);
+            tex = new WebCamTexture(device.name);
             display.texture = tex;
 
             tex.Play();
