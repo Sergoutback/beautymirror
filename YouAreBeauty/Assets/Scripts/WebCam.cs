@@ -9,7 +9,7 @@ public class WebCam : MonoBehaviour
     WebCamTexture tex;
     public RawImage display;
     public Text startStopText;
-
+    
     public void SwapCam_Cliked()
     {
         if (WebCamTexture.devices.Length >0)
@@ -55,7 +55,7 @@ public class WebCam : MonoBehaviour
         }
     }
 
-    private void StopWebCam()
+    public void StopWebCam()
     {
         display.texture = null;
         tex.Stop();
