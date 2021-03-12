@@ -10,19 +10,34 @@ public class ButtonScript : MonoBehaviour
     public int forStartTimer;
     public Text TextAnswer;
     public string text;
-    // public object TextAnswer { get; private set; }
 
-    // Start is called before the first frame update
+    // public GameObject drugoiObiekt;
+    public ArrayOfCompliments arrOfCompl;
+    // public string ansScript2;
+    // public string ansScript2;
+       
     public void Start()
     {
         TextAnswer.text =("What do you want?").ToString();
+        arrOfCompl = GetComponent<ArrayOfCompliments>();
+        // arrOfCompl.TextArr();
+        // public ArrayOfCompliments arrOfCompl;
+        // arrOfCompl = GetComponent<ArrayOfCompliments>();
+        // arrOfCompl.randText();
         
     }
 
     // Update is called once per frame
     public void On_Click_button()
-    {   
-       TextAnswer.text =("Yes, of course! \nYou are\nso beauty!").ToString();
+    {  
+        // arrOfCompl = GetComponent<ArrayOfCompliments>();
+        // arrOfCompl = drugoiObiekt.GetComponent<ArrayOfCompliments>();
+        // arrOfCompl.textArrOfCompl  = ;
+        // ansScript2 =  (arrOfCompl.randText()).ToString;
+        arrOfCompl.TextArr();
+        TextAnswer.text = arrOfCompl.TextArrOfCompl.text;
+        
+        // TextAnswer.text =("Yes, of course! \nYou are\nso beauty!").ToString();
         forStartTimer = 1;
         Handheld.Vibrate(); 
         timeLeft = 2;
