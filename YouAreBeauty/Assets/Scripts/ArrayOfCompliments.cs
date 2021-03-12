@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-// using System.Windows.Forms;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,16 +7,33 @@ public class ArrayOfCompliments : MonoBehaviour
 {
     public  Text  TextArrOfCompl;
     public string text;
-    // public string ansScript2;
-
-
+  
+  
     public void TextArr()
     {
-        TextArrOfCompl.text = ("Script2 start").ToString();
-        // string ansScript2 = TextArrOfCompl.text;
-    }
-    
+        // TextArrOfCompl.text = ("Script2 start").ToString();
+        List<string> myArr = new List<string>
+            {
+            "Yes, of course! \nYou are\nso beauty!",
+            "Саша",
+            "Костя",
+            "Маша",
+            "Никита",
+            "Диана",
+            "Даша",
+            "Лёша",
+            "Влад Быков",
+            "Влад Волков",
+            };
+            System.Random rand = new System.Random();
 
+                for (int i = myArr.Count; i > 0; i--)
+                {
+                    int flag = rand.Next(myArr.Count);
+                    TextArrOfCompl.text = (myArr[flag]);
+                    myArr.RemoveAt(flag);
+                }
+    }
 }
 
 
