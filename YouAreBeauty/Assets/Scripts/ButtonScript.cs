@@ -28,7 +28,9 @@ public class ButtonScript : MonoBehaviour
         // TextAnswer.text =("Yes, of course! \nYou are\nso beauty!").ToString();
         forStartTimer = 1;
         Handheld.Vibrate(); 
-        timeLeft = 2;
+        timeLeft = 3;
+        
+        ScreenCapture.CaptureScreenshot("SomeLevel");
         
     }   
 
