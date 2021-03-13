@@ -12,18 +12,21 @@ public class WebCam : MonoBehaviour
     
     public void SwapCam_Cliked()
     {
-        if (WebCamTexture.devices.Length >0)
-        {
-            currentCamIndex += 1;
-            currentCamIndex %= WebCamTexture.devices.Length;
-
-            // if tex is not null:
-            // stop the web cam
-            // start the web cam
-            if (tex != null)
+        if (tex != null)
+        {                
+            if (WebCamTexture.devices.Length >0)
             {
-                StopWebCam();
-                StartStopCam_Cliked();
+                currentCamIndex += 1;
+                currentCamIndex %= WebCamTexture.devices.Length;
+
+                // if tex is not null:
+                // stop the web cam
+                // start the web cam
+                if (tex != null)
+                {
+                    StopWebCam();
+                    StartStopCam_Cliked();
+                }
             }
         }
     }
@@ -61,15 +64,17 @@ public class WebCam : MonoBehaviour
         tex.Stop();
         tex = null;
     }
+
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }
