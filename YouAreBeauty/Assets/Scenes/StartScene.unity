@@ -533,18 +533,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: efb25969dd37d1e469ca03d4e2b79bff, type: 3}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 100
+    m_MaxSize: 118
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Let's Start, Beauty? ^-)
+  m_Text: Let's Start,             Beauty? ^-)
 --- !u!222 &1649566780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,8 +592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.9, y: -166.8}
-  m_SizeDelta: {x: 869.2274, y: 136.53027}
+  m_AnchoredPosition: {x: -10.9, y: -662.24}
+  m_SizeDelta: {x: 984.2, y: 219.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1889460071
 MonoBehaviour:
