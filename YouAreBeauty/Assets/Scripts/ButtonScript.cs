@@ -16,7 +16,7 @@ public class ButtonScript : MonoBehaviour
        
     public void Start()
     {
-        // TextAnswer.text =("What do you want?").ToString();
+        TextAnswer.text =("What do you want?").ToString();
         arrOfCompl = GetComponent<ArrayOfCompliments>();
     }
 
@@ -44,8 +44,6 @@ public class ButtonScript : MonoBehaviour
             if (timeLeft < 0)
                 {
                     TextAnswer.text =("What do you want?").ToString();
-                    SceneManager.LoadScene(2);
-
                 }
             }
            
