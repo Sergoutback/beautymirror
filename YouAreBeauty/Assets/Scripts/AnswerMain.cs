@@ -5,19 +5,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonScript : MonoBehaviour
+public class AnswerMain : MonoBehaviour
 {
     public float timeLeft;
     public int forStartTimer;
     public Text TextAnswer;
     public string text;
     public ArrayOfCompliments arrOfCompl;
+    public WebCam webCamStop;
+    public FromMainToScreen fromMainToScreen;
+    public int forStopWebCam;
 
        
     public void Start()
     {
         TextAnswer.text =("What do you want?").ToString();
         arrOfCompl = GetComponent<ArrayOfCompliments>();
+        webCamStop = GetComponent<WebCam>();
+        fromMainToScreen = GetComponent<FromMainToScreen>();
     }
 
   
@@ -30,6 +35,14 @@ public class ButtonScript : MonoBehaviour
         forStartTimer = 2;
         Handheld.Vibrate(); 
         timeLeft = 3;
+
+       {      
+            if (forStopWebCam ==1)
+                {
+                    fromMainToScreen.ChangeFromMainToScreenshot();
+                    webCamStop.StopWebCam();
+                }
+        }
         
         // ScreenCapture.CaptureScreenshot("SomeLevel");
         
@@ -43,7 +56,8 @@ public class ButtonScript : MonoBehaviour
             {      
             if (timeLeft < 0)
                 {
-                    TextAnswer.text =("What do you want?").ToString();
+                    TextAnswer.text =("What do you want?").ToString(); 
+                    forStopWebCam = 1;                  
                 }
             }
            
