@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class ButtonScript : MonoBehaviour
        
     public void Start()
     {
-        TextAnswer.text =("What do you want?").ToString();
+        // TextAnswer.text =("What do you want?").ToString();
         arrOfCompl = GetComponent<ArrayOfCompliments>();
     }
 
@@ -26,26 +27,28 @@ public class ButtonScript : MonoBehaviour
         TextAnswer.text = arrOfCompl.TextArrOfCompl.text;
         
         // TextAnswer.text =("Yes, of course! \nYou are\nso beauty!").ToString();
-        forStartTimer = 1;
+        forStartTimer = 2;
         Handheld.Vibrate(); 
         timeLeft = 3;
         
-        ScreenCapture.CaptureScreenshot("SomeLevel");
+        // ScreenCapture.CaptureScreenshot("SomeLevel");
         
     }   
 
     public void Update()
     {
-        if (forStartTimer == 1)
+        if (forStartTimer == 2)
         {      
             timeLeft -= Time.deltaTime;  
             {      
             if (timeLeft < 0)
                 {
                     TextAnswer.text =("What do you want?").ToString();
+                    SceneManager.LoadScene(2);
+
                 }
             }
-
+           
         }
         
     }

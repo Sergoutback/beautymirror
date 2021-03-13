@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class WebCam : MonoBehaviour
 {
+    // public Text TextAnswer;
     int currentCamIndex = 0;
     WebCamTexture tex;
     public RawImage display;
@@ -48,13 +49,9 @@ public class WebCam : MonoBehaviour
             tex = new WebCamTexture(device.name);
             display.texture = tex;
 
-            // float antiRotate = -(360 - tex.videoRotationAngle);
-            // Quaternion quatRot = new Quaternion();
-            // quatRot.eulerAngles = new Vector3(0, 0, antiRotate);
-            // display.transform.rotation = quatRot;
-
             tex.Play();
             startStopText.text = "Stop Camera";
+            // TextAnswer.text =("What do you want?").ToString();
         }
     }
 
@@ -64,17 +61,5 @@ public class WebCam : MonoBehaviour
         tex.Stop();
         tex = null;
     }
-
    
-    // Start is called before the first frame update
-    void Start()
-    {
-      
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 }
