@@ -270,6 +270,8 @@ GameObject:
   - component: {fileID: 775138149}
   - component: {fileID: 775138148}
   - component: {fileID: 775138150}
+  - component: {fileID: 775138151}
+  - component: {fileID: 775138152}
   m_Layer: 5
   m_Name: TextAnswerScreen
   m_TagString: Untagged
@@ -293,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 300}
+  m_AnchoredPosition: {x: -10.9, y: -403}
+  m_SizeDelta: {x: 869.22754, y: 635.82526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775138148
 MonoBehaviour:
@@ -317,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: efb25969dd37d1e469ca03d4e2b79bff, type: 3}
-    m_FontSize: 140
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -354,6 +356,38 @@ MonoBehaviour:
   TextAnswer: {fileID: 775138148}
   text: 
   arrOfCompl: {fileID: 0}
+  webCamStop: {fileID: 0}
+  fromMainToScreen: {fileID: 0}
+  forStopWebCam: 0
+--- !u!114 &775138151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775138146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee594eb6eae6464b95ddaf94b25c239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextAnswerScreen: {fileID: 775138148}
+  text: 
+  arrOfCompl: {fileID: 775138152}
+--- !u!114 &775138152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775138146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612e93998906c2d49a4e9c06fa73337a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextArrOfCompl: {fileID: 775138148}
+  text: 
 --- !u!1 &821016853
 GameObject:
   m_ObjectHideFlags: 0

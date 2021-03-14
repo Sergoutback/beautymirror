@@ -18,6 +18,8 @@ public class AnswerScreen : MonoBehaviour
     {
         // TextAnswer.text =("What do you want?").ToString();
         arrOfCompl = GetComponent<ArrayOfCompliments>();
+        arrOfCompl.TextArr();
+        TextAnswerScreen.text = arrOfCompl.TextArrOfCompl.text;
     }
 
   

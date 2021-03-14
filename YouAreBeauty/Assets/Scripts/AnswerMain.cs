@@ -50,19 +50,19 @@ public class AnswerMain : MonoBehaviour
         
     }   
 
-    public void Update()
-    {
-        if (forStartTimer == 2)
-        {      
-            timeLeft -= Time.deltaTime;  
-            {      
-            if (timeLeft < 0)
-                {
-                    TextAnswer.text =("What do you want?").ToString(); 
-                }
-            }
-        }
-    }
+    // public void Update()
+    // {
+    //     if (forStartTimer == 2)
+    //     {      
+    //         timeLeft -= Time.deltaTime;  
+    //         {      
+    //         if (timeLeft < 0)
+    //             {
+    //                 TextAnswer.text =("What do you want?").ToString(); 
+    //             }
+    //         }
+    //     }
+    // }
                    
     // public void ChangeScene()
     // {  
