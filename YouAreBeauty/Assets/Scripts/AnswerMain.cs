@@ -35,14 +35,16 @@ public class AnswerMain : MonoBehaviour
         forStartTimer = 2;
         Handheld.Vibrate(); 
         timeLeft = 3;
+        fromMainToScreen.ChangeFromMainToScreenshot();
+        // webCamStop.StopWebCam();
 
-       {      
-            if (forStopWebCam ==1)
-                {
-                    fromMainToScreen.ChangeFromMainToScreenshot();
-                    webCamStop.StopWebCam();
-                }
-        }
+    //    {      
+        //     if (forStopWebCam ==1)
+        //         {
+        //             fromMainToScreen.ChangeFromMainToScreenshot();
+        //             webCamStop.StopWebCam();
+        //         }
+        // }
         
         // ScreenCapture.CaptureScreenshot("SomeLevel");
         
@@ -57,12 +59,14 @@ public class AnswerMain : MonoBehaviour
             if (timeLeft < 0)
                 {
                     TextAnswer.text =("What do you want?").ToString(); 
-                    forStopWebCam = 1;                  
                 }
             }
-           
         }
-        
     }
-
-}
+                   
+    // public void ChangeScene()
+    // {  
+    //     fromMainToScreen.ChangeFromMainToScreenshot();
+    //     webCamStop.StopWebCam();                       
+    // }       
+ }
