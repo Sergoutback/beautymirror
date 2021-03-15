@@ -6,9 +6,8 @@ using UnityEngine.UI;
 public class PhotoCapture : MonoBehaviour
 {
     public Camera captureCamera;
-    public RawImage displayScreen;
-
-    public void Start() 
+    
+    public void MakeScrenshot() 
     {
         int width = this.captureCamera.pixelWidth;
         int height = this.captureCamera.pixelHeight;

@@ -85,6 +85,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12438}
     - Class: 114
+      Script: {instanceID: 12640}
+    - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
       Script: {instanceID: 12832}
@@ -267,7 +269,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: af9fcf97e3fb9295c5edb9416f47aa47
+      Hash: e4d84cc0fde60762536b04de0f8587e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnswerMain
@@ -585,7 +587,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 216fe801f77274feb2e6a9c6596c9700
+      Hash: ccbba6d1086ef7d32ba3fbb613b54fcd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhotoCapture
@@ -744,4 +746,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/ScreenshotScene.unity
-  playerPath: C:/Users/Serg/Documents/GitHub/beautymirror/YouAreBeauty/YouAreBeauty38.apk
+  playerPath: C:/Users/Serg/Documents/GitHub/beautymirror/YouAreBeauty/YouAreBeauty40.apk

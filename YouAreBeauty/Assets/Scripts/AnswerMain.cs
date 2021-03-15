@@ -11,7 +11,7 @@ public class AnswerMain : MonoBehaviour
     public string text;
     public ArrayOfCompliments arrOfCompl;
     public WebCam webCamStop;
-    public FromMainToScreen fromMainToScreen;
+    // public FromMainToScreen fromMainToScreen;
     public int forStopWebCam;
 
        
@@ -19,13 +19,13 @@ public class AnswerMain : MonoBehaviour
     {
         TextAnswer.text =("What do you want?").ToString();
         // webCamStop = GetComponent<WebCam>();
-        fromMainToScreen = GetComponent<FromMainToScreen>();
+        // fromMainToScreen = GetComponent<FromMainToScreen>();
     }
 
   
     public void On_Click_button()
     {        
         Handheld.Vibrate(); 
-        fromMainToScreen.ChangeFromMainToScreenshot();       
+        // fromMainToScreen.ChangeFromMainToScreenshot();       
     }   
 }

@@ -185,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &318120686
 Transform:
   m_ObjectHideFlags: 0
@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 1185986929}
   - component: {fileID: 1185986932}
   - component: {fileID: 1185986933}
+  - component: {fileID: 1185986934}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -793,6 +794,20 @@ MonoBehaviour:
   TextAnswerScreen: {fileID: 0}
   text: 
   arrOfCompl: {fileID: 0}
+--- !u!114 &1185986934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185986928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a170cbfadb027d649aeac86c37d5b450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  captureCamera: {fileID: 0}
+  displayScreen: {fileID: 1318279784}
 --- !u!1 &1318279782
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,9 +892,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee594eb6eae6464b95ddaf94b25c239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextAnswerScreen: {fileID: 0}
+  TextAnswerScreen: {fileID: 775138148}
   text: 
-  arrOfCompl: {fileID: 0}
+  arrOfCompl: {fileID: 775138152}
 --- !u!1 &1649566777
 GameObject:
   m_ObjectHideFlags: 0
