@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PhotoCapture : MonoBehaviour
 {
     public Camera captureCamera;
+    public RawImage displayScreen;
 
-    public void MakeScrenshot() 
+    public void Start() 
     {
         int width = this.captureCamera.pixelWidth;
         int height = this.captureCamera.pixelHeight;
@@ -18,7 +20,5 @@ public class PhotoCapture : MonoBehaviour
         Rect rect = new Rect(0, 0, width, height);
         texture.ReadPixels(rect, 0, 0);
         texture.Apply();
-    }
-
-    
+    }    
 }

@@ -85,15 +85,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12830}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 13216}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -162,19 +162,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 12754}
+      Script: {instanceID: 12640}
     - Class: 114
-      Script: {instanceID: 12764}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12830}
+      Script: {instanceID: 12766}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 27628}
+      Script: {instanceID: 13216}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,11 +235,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12830}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 13216}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,7 +267,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 4cef89eba97aa964384bc460930c0277
+      Hash: af9fcf97e3fb9295c5edb9416f47aa47
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnswerMain
@@ -585,6 +585,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 216fe801f77274feb2e6a9c6596c9700
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhotoCapture
+  - hash:
+      serializedVersion: 2
       Hash: 296a75317c2ca0f0abde379cedf4903d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -597,7 +603,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 0069236b2ff18efde4d7fb044a3e598a
+      Hash: 5ff70fa83793f060c2421e428534d483
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnswerScreen
@@ -733,15 +739,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ccbba6d1086ef7d32ba3fbb613b54fcd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PhotoCapture
   platform: 13
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/ScreenshotScene.unity
-  playerPath: C:/Users/Serg/Documents/GitHub/beautymirror/YouAreBeauty/YouAreBeauty37.apk
+  playerPath: C:/Users/Serg/Documents/GitHub/beautymirror/YouAreBeauty/YouAreBeauty38.apk
