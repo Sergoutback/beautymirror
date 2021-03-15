@@ -20,7 +20,7 @@ public class AnswerMain : MonoBehaviour
     public void Start()
     {
         TextAnswer.text =("What do you want?").ToString();
-        arrOfCompl = GetComponent<ArrayOfCompliments>();
+        // arrOfCompl = GetComponent<ArrayOfCompliments>();
         webCamStop = GetComponent<WebCam>();
         fromMainToScreen = GetComponent<FromMainToScreen>();
     }
@@ -28,28 +28,16 @@ public class AnswerMain : MonoBehaviour
   
     public void On_Click_button()
     {  
-        arrOfCompl.TextArr();
-        TextAnswer.text = arrOfCompl.TextArrOfCompl.text;
+        // arrOfCompl.TextArr();
+        // TextAnswer.text = arrOfCompl.TextArrOfCompl.text;
         
-        // TextAnswer.text =("Yes, of course! \nYou are\nso beauty!").ToString();
-        forStartTimer = 2;
+        // forStartTimer = 2;
         Handheld.Vibrate(); 
-        timeLeft = 3;
+        // timeLeft = 3;
         fromMainToScreen.ChangeFromMainToScreenshot();
-        // webCamStop.StopWebCam();
-
-    //    {      
-        //     if (forStopWebCam ==1)
-        //         {
-        //             fromMainToScreen.ChangeFromMainToScreenshot();
-        //             webCamStop.StopWebCam();
-        //         }
-        // }
-        
-        // ScreenCapture.CaptureScreenshot("SomeLevel");
         
     }   
-
+}
     // public void Update()
     // {
     //     if (forStartTimer == 2)
@@ -69,4 +57,4 @@ public class AnswerMain : MonoBehaviour
     //     fromMainToScreen.ChangeFromMainToScreenshot();
     //     webCamStop.StopWebCam();                       
     // }       
- }
+ 
