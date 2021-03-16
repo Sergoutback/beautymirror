@@ -9,10 +9,11 @@ public class AnswerMain : MonoBehaviour
 {
     public Text TextAnswer;
     public string text;
-    public ArrayOfCompliments arrOfCompl;
+    // public ArrayOfCompliments arrOfCompl;
     public WebCam webCamStop;
     // public FromMainToScreen fromMainToScreen;
     public int forStopWebCam;
+    public PhotoCapture photoCap;
 
        
     public void Start()
@@ -20,6 +21,8 @@ public class AnswerMain : MonoBehaviour
         TextAnswer.text =("What do you want?").ToString();
         // webCamStop = GetComponent<WebCam>();
         // fromMainToScreen = GetComponent<FromMainToScreen>();
+        photoCap = GetComponent<PhotoCapture>();
+        photoCap.MakeScrenshot();
     }
 
   
