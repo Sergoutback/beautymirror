@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PhotoCapture : MonoBehaviour
 {
     public Camera captureCamera;
+    public RawImage displayScreen;
     
     public void MakeScrenshot() 
     {
